@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/ks5ks/SinglePriceComponent
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://ks5ks-single-price-component.netlify.app/
 
 ## My process
 
