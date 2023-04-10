@@ -1,0 +1,155 @@
+:root {
+  --light-gray: hsl(218, 43%, 93%);
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-light: hsla(179, 62%, 43%, 0.8);
+  --grayish-blue: hsl(218, 22%, 67%);
+
+  /* Text Colors */
+  --text-white: hsl(0, 0%, 100%);
+  --text-white-transparent: hsla(0, 0%, 100%, 0.5);
+  --bright-yellow: hsl(71, 73%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+  overflow: hidden;
+}
+
+.card {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  max-width: 375px;
+  background-color: white;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0rem 0.5rem 1rem var(--grayish-blue);
+}
+
+.card-header {
+  background: var(--text-white);
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-radius: 1rem;
+  grid-column: 1 / 2;
+}
+
+.header {
+  color: var(--cyan);
+  margin-bottom: 1rem;
+}
+
+.subheader {
+  color: var(--bright-yellow);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.pitch {
+  color: var(--grayish-blue);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.card-block-1 {
+  background-color: var(--cyan);
+  color: var(--text-white);
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 0;
+}
+
+.block-header {
+  color: var(--text-white);
+  margin-bottom: 1rem;
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: var(--text-white);
+  font-size: 2rem;
+}
+
+.period {
+  color: var(--text-white-transparent);
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+}
+
+.sign-up {
+  background-color: var(--bright-yellow);
+  color: var(--text-white);
+  font-size: 1rem;
+  width: 100%;
+  padding: 1.1rem 0rem 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.5rem 0.5rem var(--bright-yellow);
+}
+
+.sign-up:hover {
+  background-color: var(--text-white);
+  color: var(--bright-yellow);
+}
+
+.card-block-2 {
+  background-color: var(--cyan-light);
+  color: var(--text-white);
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.benefit-list {
+  list-style-type: none;
+}
+
+.benefit {
+  color: var(--text-white-transparent);
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 660px) {
+  .card {
+    max-width: 660px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-header {
+    grid-column: 1 / 3;
+  }
+
+  .card-block-1 {
+    border-radius: 0 0 0 1rem;
+  }
+
+  .card-block-2 {
+    border-radius: 0 0 1rem 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
