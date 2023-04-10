@@ -34,7 +34,7 @@ body {
   border-radius: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  box-shadow: 0rem .5rem 1rem var(--grayish-blue);
+  box-shadow: 0rem 0.5rem 1rem var(--grayish-blue);
 }
 
 .card-header {
@@ -103,7 +103,7 @@ body {
   padding: 1.1rem 0rem 1.1rem;
   border: none;
   border-radius: 0.5rem;
-  box-shadow: 0rem 0.5rem 0.5rem var(--bright-yellow));
+  box-shadow: 0rem 0.5rem 0.5rem var(--bright-yellow);
 }
 
 .sign-up:hover {
